@@ -23,8 +23,10 @@ gameEvents.delete(64);
 
 // 3.
 console.log(`An event happened, on average every ${90 / gameEvents.size} mins`);
-const time = [...gameEvents.keys()];
+const time = [...gameEvents.keys()].pop();
 console.log(time);
+
+);
 
 // 4.
 for (const [min, event] of gameEvents) {
